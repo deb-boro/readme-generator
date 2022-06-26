@@ -1,18 +1,18 @@
 //create the project title
 export const mainContent = (projectArr) => {
   return `
-        # ${projectArr.Project_Title}
+# ${projectArr.Project_Title}
 
-        ## Description
-        ${projectArr.Description}
+## Description
+${projectArr.Description}
 
-        ## Installation
-        ${projectArr.Installation}
+## Installation
+${projectArr.Installation}
 
-        ## Usage Information
-        ${projectArr.usage_info}
+## Usage Information
+${projectArr.usage_info}
 
-        ## How to Contribute 
-        ${projectArr.How_to_Contribute}
-    `
+## How to Contribute 
+${projectArr.How_to_Contribute}
+`
 }
