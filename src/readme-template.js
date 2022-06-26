@@ -3,6 +3,8 @@ export const mainContent = (projectArr) => {
   return `
 # ${projectArr.Project_Title}
 
+[![](https://img.shields.io/apm/l/npm)]()
+
 ## Description
 ${projectArr.Description}
 
