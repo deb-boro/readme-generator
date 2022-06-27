@@ -34,25 +34,27 @@ ${generateLicenseBadge(projectArr.license)}
 ${projectArr.Description}
 
 ## Table of Contents 
-- [Installation](#installation)
-- [Usage Information](#usage)
-- [Contribution Guidelines](#Contribution Guidelines)
-- [License](#license)
-- [Test Instructions](#Test Instructions)
-- [Entitled Questions](#Entitled Questions)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Contribution](#Contribution)
+- [License](#License)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Installation
 ${projectArr.Installation}
 
-## Usage Information
+## Usage
 ${projectArr.usage_info}
 
-## Contribution Guidelines
+## Contribution
 ${projectArr.How_to_Contribute}
 
-## Test Instructions
+## License
 
-## Entitled Questions
+## Tests
+
+## Questions
 
 `
 }
