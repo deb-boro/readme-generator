@@ -1,3 +1,5 @@
+import { readFile } from '../utils/generateMarkdown.js'
+
 const generateLicenseBadge = (license) => {
   if (license === 'Apache License 2.0') {
     return `
@@ -22,6 +24,12 @@ const generateLicenseBadge = (license) => {
   } else if (license === null) {
   }
 }
+const generateLicenseNotice = (license) => {
+  if (license === 'Apache License 2.0') {
+    return readFile('./src/ApacheLicense.txt')
+  } else if (license === null) {
+  }
+}
 
 //Create rest of the readme content
 export const mainContent = (projectArr) => {
@@ -36,7 +44,7 @@ ${projectArr.Description}
 ## Table of Contents 
 - [Installation](#Installation)
 - [Usage](#Usage)
-- [Contribution](#Contribution)
+- [Contributing](#Contributing)
 - [License](#License)
 - [Tests](#Tests)
 - [Questions](#Questions)
@@ -47,14 +55,18 @@ ${projectArr.Installation}
 ## Usage
 ${projectArr.usage_info}
 
-## Contribution
+## Contributing
 ${projectArr.How_to_Contribute}
 
 ## License
+${generateLicenseNotice(projectArr.license.join())}
 
 ## Tests
 
 ## Questions
+In case of any questions you can reach me at https://github.com/${
+    projectArr.githubUsername
+  } or ${projectArr.email}
 
 `
 }

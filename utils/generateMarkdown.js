@@ -1,6 +1,6 @@
 // // TODO: Create a function that returns a license badge based on which license is passed in
 // // If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+//function renderLicenseBadge(license) {}
 
 // // TODO: Create a function that returns the license link
 // // If there is no license, return an empty string
@@ -27,12 +27,28 @@ const writeFile = (fileContent) => {
       }
       resolve({
         ok: true,
-        message: 'File Created!!',
+        message: 'Readme File Created!!',
       })
     })
   })
 }
 
-export { writeFile, renderLicenseBadge }
+const readFile = (filePath) => {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, (err, data) => {
+      if (err) {
+        reject(err)
+        return
+      }
+      resolve({
+        ok: true,
+        message: 'file read successfully',
+        read: data.toString(),
+      })
+    })
+  })
+}
+
+export { writeFile, readFile }
 
 // module.exports = generateMarkdown

@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 import { mainContent } from './src/readme-template.js'
-import { writeFile, renderLicenseBadge } from './utils/generateMarkdown.js'
+import { writeFile } from './utils/generateMarkdown.js'
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -96,11 +96,36 @@ const promptUser = () => {
         'Mozilla Public License 2.0',
       ],
     },
+    {
+      type: 'input',
+      name: 'githubUsername',
+      message: 'What is your github username?',
+      validate: (githubInput) => {
+        if (githubInput) {
+          return true
+        } else {
+          console.log('Please enter github username')
+          return false
+        }
+      },
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'What is your email address?',
+      validate: (emailInput) => {
+        if (emailInput) {
+          return true
+        } else {
+          console.log('Please enter your email address')
+          return false
+        }
+      },
+    },
   ])
 }
 
 promptUser()
-  .then()
   .then((projectArr) => {
     return mainContent(projectArr)
   })
