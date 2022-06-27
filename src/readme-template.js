@@ -1,4 +1,4 @@
-import { readFile } from '../utils/generateMarkdown.js'
+import fs from 'fs'
 
 const generateLicenseBadge = (license) => {
   if (license === 'Apache License 2.0') {
@@ -24,10 +24,20 @@ const generateLicenseBadge = (license) => {
   } else if (license === null) {
   }
 }
-const generateLicenseNotice = (license) => {
+
+// const readFile = (filePath) => {
+//   fs.readFile(filePath, (err, data) => {
+//     return `
+//       ${data.toString()}
+//       `
+//   })
+// }
+
+let generateLicenseNotice = (license) => {
   if (license === 'Apache License 2.0') {
-    return readFile('./src/ApacheLicense.txt')
-  } else if (license === null) {
+    return `
+    ^^^^^^^^*********
+   `
   }
 }
 
@@ -64,9 +74,11 @@ ${generateLicenseNotice(projectArr.license.join())}
 ## Tests
 
 ## Questions
-In case of any questions you can reach me at https://github.com/${
+In case of any questions you can reach me at [${
     projectArr.githubUsername
-  } or ${projectArr.email}
+  }](https://github.com/${projectArr.githubUsername}) or [${
+    projectArr.email
+  }](${projectArr.email})
 
 `
 }
