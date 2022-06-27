@@ -28,7 +28,7 @@ export const mainContent = (projectArr) => {
   return `
 # ${projectArr.Project_Title}
 
-${generateLicenseBadge(projectArr.license)}
+${generateLicenseBadge(projectArr.license.join())}
 
 ## Description
 ${projectArr.Description}
