@@ -1,6 +1,6 @@
 import inquirer from 'inquirer'
 import { mainContent } from './src/readme-template.js'
-import writeFile from './utils/generateMarkdown.js'
+import { writeFile, renderLicenseBadge } from './utils/generateMarkdown.js'
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -92,15 +92,15 @@ const promptUser = () => {
         'Apache License 2.0',
         'MIT License',
         'Boost Software License 1.0',
-        'Eclipse Public License 2.0',
-        'BSD 3-Clause License',
-        'BSD 2-Clause License',
+        'Eclipse Public License 1.0',
+        'Mozilla Public License 2.0',
       ],
     },
   ])
 }
 
 promptUser()
+  .then()
   .then((projectArr) => {
     return mainContent(projectArr)
   })
