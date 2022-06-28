@@ -20,10 +20,10 @@ Readme Generator is a node.js application created to dynamically generate README
 npm install inquirer
 
 ## Usage
-git clone git@github.com:deb-boro/readme-generator.git <yourProjectfolderName>
+git clone git@github.com:deb-boro/readme-generator.git yourProjectName 
 
 ## Contributing
-You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request. 
+You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request.
 
 ## License
 
@@ -39,5 +39,5 @@ You can contribute to the project by submitting new features or fixing bugs but 
 ## Tests
 
 ## Questions
-In case of any questions you can reach me at [deb-boro](https://github.com/deb-boro) or [debajit.boro666@gmail.com](debajit.boro666@gmail.com)
+In case of any questions you can reach me at [ asasd](https://github.com/ asasd) or [asdasdads](asdasdads)
 
