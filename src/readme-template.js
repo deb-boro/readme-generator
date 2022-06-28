@@ -25,13 +25,13 @@ const generateLicenseBadge = (license) => {
   }
 }
 
-// const readFile = (filePath) => {
-//   fs.readFile(filePath, (err, data) => {
-//     return `
-//       ${data.toString()}
-//       `
-//   })
-// }
+const arrStringOperation = (usageInfo) => {
+  let arrUsageInfo = usageInfo.split(',')
+
+  return `
+    ${arrUsageInfo.join('\n')}
+    `
+}
 
 let generateLicenseNotice = (license) => {
   if (license === 'Apache License 2.0') {
@@ -385,8 +385,10 @@ ${projectArr.Description}
 ${projectArr.Installation}
 
 ## Usage
-${projectArr.usage_info}
-${`[![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)]`}
+
+${arrStringOperation(projectArr.usage_info)}
+
+${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
 
 ## Contributing
 ${projectArr.How_to_Contribute}
