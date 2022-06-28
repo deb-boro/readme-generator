@@ -26,11 +26,13 @@ const generateLicenseBadge = (license) => {
 }
 
 const arrStringOperation = (usageInfo) => {
-  let arrUsageInfo = usageInfo.split(', ')
+  const arrUsageInfo = usageInfo.split(', ')
+  const [one, two, three, four, ...rest] = arrUsageInfo
   return `
-     ${arrUsageInfo[0]}
-     ${arrUsageInfo[1]}
-     ${arrUsageInfo[2]}
+     ${one}
+     ${two}
+     ${three}
+     
   `
 }
 
