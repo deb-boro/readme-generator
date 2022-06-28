@@ -30,7 +30,9 @@ const arrStringOperation = (usageInfo) => {
   const [one, two, three, four, ...rest] = arrUsageInfo
   return `
      ${one}
+
      ${two}
+     
      ${three}
      
   `
