@@ -392,7 +392,6 @@ ${generateLicenseBadge(projectArr.license.join())}
 ${projectArr.Description}
 
 ## Walkthrough Video 
-Video demonstrating how a user would invoke the application from the command line, repond to each question and generate the readme file 
 [![Video]](https://user-images.githubusercontent.com/100662344/176260234-e41f3cc4-0c7b-4ed6-bfb8-78f2f841f895.mov)
 
 ## Table of Contents 
