@@ -1,12 +1,12 @@
 
-# Readme-Generator
+# werwer
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
       
 
 ## Description
-Readme Generator is a node.js application created to dynamically generate README.md file where user inputs are captured using rpm inquirer package.
+werwer
 
 ## Table of Contents 
 - [Installation](#Installation)
@@ -17,20 +17,20 @@ Readme Generator is a node.js application created to dynamically generate README
 - [Questions](#Questions)
 
 ## Installation
-    npm install inquirer
+    rwerwer
 
 ## Usage
 
-      
-    git clone git@github.com:deb-boro/readme-generator.git yourProjectName
-cd yourProjectName
-node index.js
+                      
+     erwer
+     werwerwr
+     22312313
   
 
 ![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
 
 ## Contributing
-you can contribute
+erwerwerwer
 
 ## License
 
@@ -46,9 +46,9 @@ you can contribute
     
 
 ## Tests
-test
+wererwer
 
 
 ## Questions
-In case of any questions you can reach me at [deb-boro](https://github.com/deb-boro) or [debajit.boro666@gmail.com](mailto:debajit.boro666@gmail.com)
+In case of any questions you can reach me at [rewer](https://github.com/rewer) or [werwer](mailto:werwer)
 
