@@ -38,6 +38,19 @@ const arrStringOperation = (usageInfo) => {
   `
 }
 
+const arrStringInstallation = (installationInfo) => {
+  const arrInstallationInfo = installationInfo.split(', ')
+  const [one, two, ...rest] = arrInstallationInfo
+  return `
+     ${one}
+
+     ${two}
+     
+  
+     
+  `
+}
+
 let generateLicenseNotice = (license) => {
   if (license === 'Apache License 2.0') {
     return `
@@ -387,11 +400,13 @@ ${projectArr.Description}
 - [Questions](#Questions)
 
 ## Installation
-    ${projectArr.Installation}
+    
+${arrStringInstallation(projectArr.Installation)}
 
 ## Usage
+${arrStringOperation(projectArr.usage_info)}
 
-                      ${arrStringOperation(projectArr.usage_info)}
+Respond to the question prompted in the terminal and select a license type as shown in the screenshot below:
 
 ${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
 
