@@ -1,5 +1,5 @@
 
-# ReadMe-Generator
+# ReadMe-Generator 
 
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -17,20 +17,20 @@ Readme Generator is a node.js application created to dynamically generate README
 - [Questions](#Questions)
 
 ## Installation
-npm install inquirer
+    npm install inquirer
 
 ## Usage
 
-
-    git clone git@github.com:deb-boro/readme-generator.git
- cd <yourProjectfolderName>
+    
+    git clone git@github.com:deb-boro/readme-generator.git yourProjectName
+ cd yourProjectName
  node index.js
     
 
 ![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
 
 ## Contributing
-You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request. 
+You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request.
 
 ## License
 
@@ -108,7 +108,9 @@ You can contribute to the project by submitting new features or fixing bugs but 
     
 
 ## Tests
+Test to ensure that the inquirer prompt is working as expected and all the input provided are reflected in the readme correctly.
+
 
 ## Questions
-In case of any questions you can reach me at [deb-boro](https://github.com/deb-boro) or [debajit.boro666@gmail.com](debajit.boro666@gmail.com)
+In case of any questions you can reach me at [deb-boro](https://github.com/deb-boro) or [debajit.boro666@gmail.com](mailto:debajit.boro666@gmail.com)
 

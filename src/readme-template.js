@@ -382,11 +382,11 @@ ${projectArr.Description}
 - [Questions](#Questions)
 
 ## Installation
-${projectArr.Installation}
+    ${projectArr.Installation}
 
 ## Usage
 
-${arrStringOperation(projectArr.usage_info)}
+    ${arrStringOperation(projectArr.usage_info)}
 
 ${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
 
@@ -397,13 +397,15 @@ ${projectArr.How_to_Contribute}
 ${generateLicenseNotice(projectArr.license.join())}
 
 ## Tests
+${projectArr.test_instructions}
+
 
 ## Questions
 In case of any questions you can reach me at [${
     projectArr.githubUsername
   }](https://github.com/${projectArr.githubUsername}) or [${
     projectArr.email
-  }](${projectArr.email})
+  }](mailto:${projectArr.email})
 
 `
 }
