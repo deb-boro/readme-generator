@@ -386,6 +386,7 @@ ${projectArr.Installation}
 
 ## Usage
 ${projectArr.usage_info}
+!(https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
 
 ## Contributing
 ${projectArr.How_to_Contribute}
