@@ -1,12 +1,12 @@
 
-# Readme-Generator
+# ReadME-Generator
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
       
 
 ## Description
-Readme Generator is a node.js application created to dynamically generate README.md file where users input are captured using npm inquirer package. 
+Readme Generator is a node.js application created to dynamically generate README.md file where users input are captured using npm inquirer package.
 
 ## Walkthrough Video 
 Video demonstrating how a user would invoke the application from the command line, repond to each question and generate the readme file 
@@ -33,7 +33,7 @@ Video demonstrating how a user would invoke the application from the command lin
 
 ## Usage
 
-     git clone git@github.com:deb-boro/readme-generator.git yourProjectFolderName
+     git clone  git@github.com:deb-boro/readme-generator.git yourProjectFolderName
 
      cd yourProjectFolderName
      
@@ -62,7 +62,7 @@ You can contribute to the project by submitting new features or fixing bugs but 
     
 
 ## Tests
-Test to ensure that the inquirer prompt is working as expected and all the input provided are reflected in the readme correctly. 
+Test to ensure that the inquirer prompt is working as expected and readme file is generating. 
 
 
 ## Questions
