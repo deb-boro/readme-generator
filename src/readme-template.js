@@ -26,11 +26,11 @@ const generateLicenseBadge = (license) => {
 }
 
 const arrStringOperation = (usageInfo) => {
-  let arrUsageInfo = usageInfo.split(',')
+  let arrUsageInfo = usageInfo.split(', ')
 
   return `
     ${arrUsageInfo.join('\n')}
-    `
+  `
 }
 
 let generateLicenseNotice = (license) => {
@@ -386,7 +386,7 @@ ${projectArr.Description}
 
 ## Usage
 
-    ${arrStringOperation(projectArr.usage_info)}
+      ${arrStringOperation(projectArr.usage_info)}
 
 ${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
 
