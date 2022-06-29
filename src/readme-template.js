@@ -392,7 +392,7 @@ ${generateLicenseBadge(projectArr.license.join())}
 ${projectArr.Description}
 
 ## Walkthrough Video 
-[![Video]](https://user-images.githubusercontent.com/100662344/176260234-e41f3cc4-0c7b-4ed6-bfb8-78f2f841f895.mov)
+[![Video]](https://user-images.githubusercontent.com/100662344/176338087-8814c29f-decb-4ae4-b9e0-a2752f96eacd.mp4)
 
 ## Table of Contents 
 - [Installation](#Installation)
