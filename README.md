@@ -45,7 +45,7 @@ Respond to the question prompted in the terminal and select a license type as sh
 ![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
 
 ## Contributing
-You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request. 
+You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request.
 
 ## License
 
