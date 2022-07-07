@@ -1,12 +1,12 @@
 
-# ReadMe-Generator
+# Readme Generator
 
-
+  
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
       
 
 ## Description
-Readme Generator is a node.js application created to dynamically generate README.md file where user inputs are captured using rpm inquirer package.
+  Readme Generator is a node.js application created to dynamically generate README.md file where user inputs are captured using rpm inquirer package.
 
 ## Walkthrough Video 
 [![Video]](https://user-images.githubusercontent.com/100662344/176338087-8814c29f-decb-4ae4-b9e0-a2752f96eacd.mp4)
@@ -25,9 +25,7 @@ Readme Generator is a node.js application created to dynamically generate README
      npm init
 
      npm install inquirer
-     
   
-     
   
 
 ## Usage
@@ -35,20 +33,21 @@ Readme Generator is a node.js application created to dynamically generate README
      git clone git@github.com:deb-boro/readme-generator.git yourProjectfolderName
 
      cd yourProjectfolderName
-     
+
      node index.js
-     
+
   
 
 Respond to the question prompted in the terminal and select a license type as shown in the screenshot below:
 
-![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
+  ![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)
 
 ## Contributing
-You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request.
+  You can contribute to the project by submitting new features or fixing bugs but first open an issue and then raise a pull request.
 
 ## License
 
+  
     MIT License
 
     Copyright (c) 2022 Debajit Boro
@@ -61,10 +60,8 @@ You can contribute to the project by submitting new features or fixing bugs but 
     
 
 ## Tests
-Test to ensure that the inquirer prompt is working as expected and all the input provided are reflected in the readme correctly.
+  Test to ensure that the inquirer prompt is working as expected and all the input provided are reflected in the readme correctly.
 
 
 ## Questions
 In case of any questions you can reach me at [deb-boro](https://github.com/deb-boro) or [debajit.boro666@gmail.com](mailto:debajit.boro666@gmail.com)
-
-

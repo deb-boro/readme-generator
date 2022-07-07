@@ -1,6 +1,6 @@
-import inquirer from 'inquirer'
-import { mainContent } from './src/readme-template.js'
-import { writeFile } from './utils/generateMarkdown.js'
+const inquirer = require('inquirer')
+const mainContent = require('./src/readme-template')
+const writeFile = require('./utils/generateMarkdown')
 
 const promptUser = () => {
   return inquirer.prompt([

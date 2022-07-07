@@ -1,5 +1,3 @@
-import fs from 'fs'
-
 const generateLicenseBadge = (license) => {
   if (license === 'Apache License 2.0') {
     return `
@@ -26,32 +24,29 @@ const generateLicenseBadge = (license) => {
 }
 
 const arrStringOperation = (usageInfo) => {
-  const arrUsageInfo = usageInfo.split(', ')
-  const [one, two, three, four, ...rest] = arrUsageInfo
+  const arrUsageInfo = usageInfo?.split(', ')
+  const [one, two, three] = arrUsageInfo
   return `
      ${one}
 
      ${two}
-     
+
      ${three}
-     
+
   `
 }
 
 const arrStringInstallation = (installationInfo) => {
-  const arrInstallationInfo = installationInfo.split(', ')
-  const [one, two, ...rest] = arrInstallationInfo
+  const arrInstallationInfo = installationInfo?.split(', ')
+  const [one, two] = arrInstallationInfo
   return `
      ${one}
 
      ${two}
-     
-  
-     
   `
 }
 
-let generateLicenseNotice = (license) => {
+const generateLicenseNotice = (license) => {
   if (license === 'Apache License 2.0') {
     return `
                             Apache License
@@ -151,7 +146,7 @@ let generateLicenseNotice = (license) => {
   } else if (license === 'Eclipse Public License 1.0') {
     return `
     Eclipse Public License, Version 1.0 (EPL-1.0)
-    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM constITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
     1. DEFINITIONS
 
@@ -263,7 +258,7 @@ let generateLicenseNotice = (license) => {
     1.10. “Modifications”
     means any of the following:
     
-    any file in Source Code Form that results from an addition to, deletion from, or modification of the contents of Covered Software; or
+    any file in Source Code Form that results from an addition to, deconstion from, or modification of the contents of Covered Software; or
     
     any new file in Source Code Form that contains any Covered Software.
     
@@ -353,7 +348,7 @@ let generateLicenseNotice = (license) => {
     Any litigation relating to this License may be brought only in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction, without reference to its conflict-of-law provisions. Nothing in this Section shall prevent a party’s ability to bring cross-claims or counter-claims.
     
     9. Miscellaneous
-    This License represents the complete agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not be used to construe this License against a Contributor.
+    This License represents the compconste agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not be used to construe this License against a Contributor.
     
     10. Versions of the License
     10.1. New Versions
@@ -382,14 +377,14 @@ let generateLicenseNotice = (license) => {
 }
 
 //Create rest of the readme content
-export const mainContent = (projectArr) => {
+const mainContent = (projectArr) => {
   return `
 # ${projectArr.Project_Title}
 
-${generateLicenseBadge(projectArr.license.join())}
+  ${generateLicenseBadge(projectArr.license.join())}
 
 ## Description
-${projectArr.Description}
+  ${projectArr.Description}
 
 ## Walkthrough Video 
 [![Video]](https://user-images.githubusercontent.com/100662344/176338087-8814c29f-decb-4ae4-b9e0-a2752f96eacd.mp4)
@@ -405,22 +400,24 @@ ${projectArr.Description}
 ## Installation
     
 ${arrStringInstallation(projectArr.Installation)}
+  
 
 ## Usage
 ${arrStringOperation(projectArr.usage_info)}
 
 Respond to the question prompted in the terminal and select a license type as shown in the screenshot below:
 
-${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
+  ${`![screenshot](https://github.com/deb-boro/readme-generator/blob/main/src/screenshot_usage_info.png?raw=true)`}
 
 ## Contributing
-${projectArr.How_to_Contribute}
+  ${projectArr.How_to_Contribute}
 
 ## License
-${generateLicenseNotice(projectArr.license.join())}
+
+  ${generateLicenseNotice(projectArr.license.join())}
 
 ## Tests
-${projectArr.test_instructions}
+  ${projectArr.test_instructions}
 
 
 ## Questions
@@ -429,7 +426,7 @@ In case of any questions you can reach me at [${
   }](https://github.com/${projectArr.githubUsername}) or [${
     projectArr.email
   }](mailto:${projectArr.email})
-
-
 `
 }
+
+module.exports = mainContent

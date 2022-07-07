@@ -1,4 +1,4 @@
-import fs from 'fs'
+const fs = require('fs')
 
 const writeFile = (fileContent) => {
   return new Promise((resolve, reject) => {
@@ -15,6 +15,4 @@ const writeFile = (fileContent) => {
   })
 }
 
-export { writeFile }
-
-// module.exports = generateMarkdown
+module.exports = writeFile
